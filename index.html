@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Recur is building an AI agent for investigating difficult software bugs." />
+
+  <title>Recur - Investigating difficult software bugs.</title>
+
+  <link
+  rel="icon"
+  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2222%22 fill=%22%23b8df76%22/></svg>"
+/>
+</head>
+
+<body>
+
+  <div class="site">
+
+    <div class="ambient"></div>
+
+
+    <!-- NAV -->
+
+    <header class="header">
+
+      <a href="/" class="brand">
+        <span class="brand-dot"></span>
+        recur
+      </a>
+
+      <span class="version">
+        v1
+      </span>
+
+    </header>
+
+
+    <main>
+
+      <!-- CENTRAL EXPLANATION -->
+
+      <section class="about">
+
+        <div class="about-inner">
+
+          <h2>
+            Not sure what’s going on in the code?
+          </h2>
+
+          <p>
+            Recur helps you trace the code, understand what happened, and figure out what to fix
+          </p>
+
+        </div>
+
+      </section>
+
+      <!-- HERO / UNIFIED WAITLIST + RESEARCH -->
+
+      <section class="hero">
+
+        <div class="hero-card">
+
+          <div class="card-header">
+            <span>recur / v1</span>
+            <span>building</span>
+          </div>
+
+
+          <div class="hero-copy">
+
+            <h1>
+              Recur is
+              <em>investigating</em>
+              difficult bugs
+            </h1>
+
+            <p>
+              We're building an AI agent that investigates what went wrong
+              before trying to fix it
+            </p>
+
+          </div>
+
+
+          <form id="recur-form">
+
+            <!-- WAITLIST DETAILS -->
+
+            <div class="form-group">
+
+              <label for="name">
+                Your name
+              </label>
+
+              <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Email
+              </label>
+
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="role">
+                What best describes you?
+              </label>
+
+              <select id="role" name="role" required>
+                <option value="" disabled selected>
+                  Select one
+                </option>
+
+                <option value="software_engineer">
+                  Software engineer
+                </option>
+
+                <option value="founder">
+                  Founder
+                </option>
+
+                <option value="student">
+                  Student
+                </option>
+
+                <option value="researcher">
+                  Researcher
+                </option>
+
+                <option value="other">
+                  Other
+                </option>
+              </select>
+
+            </div>
+
+
+            <div class="form-divider"></div>
+
+
+            <div class="research-intro">
+
+              <span>
+                A little research
+              </span>
+
+              <p>
+                Think about the last difficult bug you worked on.
+              </p>
+
+            </div>
+
+
+            <!-- Q1 -->
+
+            <div class="form-group">
+
+              <label for="q1">
+                What happened?
+              </label>
+
+              <textarea id="q1" name="q1" rows="4" placeholder="What made the bug difficult?" required></textarea>
+
+            </div>
+
+
+            <!-- Q2 -->
+
+            <div class="form-group">
+
+              <label for="q2">
+                How did you investigate it?
+              </label>
+
+              <textarea id="q2" name="q2" rows="4" placeholder="What did you try?" required></textarea>
+
+            </div>
+
+
+            <!-- Q3 -->
+
+            <div class="form-group">
+
+              <label for="q3">
+                How long did it take to resolve?
+              </label>
+
+              <select id="q3" name="q3" required>
+
+                <option value="" disabled selected>
+                  Select one
+                </option>
+
+                <option value="under_30m">
+                  Under 30 minutes
+                </option>
+
+                <option value="30m_1h">
+                  30 minutes - 1 hour
+                </option>
+
+                <option value="1_3h">
+                  1 - 3 hours
+                </option>
+
+                <option value="3_8h">
+                  3 - 8 hours
+                </option>
+
+                <option value="more_than_day">
+                  More than a day
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <!-- Q4 -->
+
+            <div class="form-group">
+
+              <label for="q4">
+                How difficult was it?
+              </label>
+
+              <select id="q4" name="q4" required>
+
+                <option value="" disabled selected>
+                  Select one
+                </option>
+
+                <option value="1">
+                  1 - Not very difficult
+                </option>
+
+                <option value="2">
+                  2
+                </option>
+
+                <option value="3">
+                  3 - Moderate
+                </option>
+
+                <option value="4">
+                  4
+                </option>
+
+                <option value="5">
+                  5 - Extremely difficult
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <!-- Q5 -->
+
+            <div class="form-group">
+
+              <label for="q5">
+                What tools did you use?
+              </label>
+
+              <textarea id="q5" name="q5" rows="3"
+                placeholder="IDE, debugger, logs, documentation, ChatGPT, Claude, Cursor, etc." required></textarea>
+
+            </div>
+
+
+            <!-- Q6 -->
+
+            <div class="form-group">
+
+              <label for="q6">
+                What did those tools still leave you to figure out?
+              </label>
+
+              <textarea id="q6" name="q6" rows="4" placeholder="What was still difficult?" required></textarea>
+
+            </div>
+
+
+            <div class="submit-area">
+
+              <button type="submit" id="submit-button">
+                Join the waitlist
+                <span>→</span>
+              </button>
+
+              <p id="form-message" class="form-message"></p>
+
+            </div>
+
+          </form>
+
+
+          <div class="card-footer">
+            <span>Early access</span>
+            <span>Recur</span>
+          </div>
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+      <span class="brand">
+        <span class="brand-dot"></span>
+        recur
+      </span>
+
+      <span>
+        Investigating software bugs.
+      </span>
+
+      <span>
+        © 2026
+      </span>
+
+    </footer>
+
+  </div>
+
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
