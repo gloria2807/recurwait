@@ -2,7 +2,9 @@ import "./index.css";
 
 import { createClient } from "@supabase/supabase-js";
 
+import { inject } from '@vercel/analytics';
 
+inject();
 /* --------------------------------
    SUPABASE
 -------------------------------- */
