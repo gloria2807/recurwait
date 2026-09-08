@@ -421,6 +421,62 @@ select {
   text-align: right;
 }
 
+.form-message.referral {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.success-main {
+  display: block;
+}
+
+.share-prompt {
+  display: block;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.share-prompt strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.share-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.share-button {
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--text);
+  padding: 9px 14px;
+  border-radius: 7px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.share-button:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.share-primary {
+  background: var(--green);
+  border-color: var(--green);
+  color: #10130b;
+}
+
+.share-primary:hover {
+  background: var(--green);
+  border-color: var(--green);
+}
+
 /* ------------------------------
    MOBILE
 ------------------------------ */
